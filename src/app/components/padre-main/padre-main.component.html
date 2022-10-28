@@ -1,0 +1,45 @@
+<mat-toolbar>
+    Proyecto Cursos
+</mat-toolbar>
+
+<mat-sidenav-container>
+
+    <mat-sidenav mode="side" opened>
+
+     <img class="avatar mat-elevation-z8" src="https://material-cards.s3-eu-west-1.amazonaws.com/thumb-joaquin-phoenix.jpg" alt="">
+   
+       <h4 class="nombre">Alberto</h4>
+     <p class="perfil">Administrador</p>
+
+    <mat-divider></mat-divider>
+
+    <button mat-button class="menu-button" routerLink="/inicio">
+        <mat-icon aria-hidden="false" fontIcon="house"></mat-icon>
+        <span>Home</span>
+    </button>
+
+    <button mat-button class="menu-button" routerLink="/alumnos">
+        <mat-icon aria-hidden="false" fontIcon="person"></mat-icon>
+        <span>Alumnos</span>
+    </button>
+
+    <button mat-button class="menu-button" routerLink="/cursos">
+        <mat-icon aria-hidden="false" fontIcon="book"></mat-icon>
+        <span>Cursos</span>
+    </button>
+
+    <button mat-button class="menu-button" routerLink="/clases">
+        <mat-icon aria-hidden="false" fontIcon="folder-open"></mat-icon>
+        <span>Clases</span>
+    </button>
+      
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+        <div class="content mat-elevation-z4">            
+             <!-- COMPONENTE ENRUTAMIENTO -->               
+             <router-outlet></router-outlet>           
+        </div>
+    </mat-sidenav-content>
+
+</mat-sidenav-container>
